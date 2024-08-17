@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: minecraft_server
+  labels:
+    name: minecraft
+spec:
+  containers:
+  - name: server
+    image: dockerfile
+    resources:
+      limits:
+        memory: "4096MB"
+        cpu: "500m"
+    ports:
+      - containerPort: 25565
