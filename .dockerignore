@@ -1,6 +1,6 @@
 .dockerignore
 **/*.log
-Dockerfile
+dockerfile
 .git
 .gitignore
 versions/MCSVDownloader/**/*
