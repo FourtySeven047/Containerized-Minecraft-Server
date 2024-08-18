@@ -1,4 +1,4 @@
-FROM openjdk:24
+FROM openjdk:24-slim
 LABEL maintainer="sthobue@glh.de"
 WORKDIR /usr/src/app
 
@@ -12,3 +12,5 @@ RUN touch eula.txt
 RUN echo "eula=true" >> eula.txt
 
 CMD java -jar MCSVDownloader-0.1.jar ${version} && java -jar server.jar nogui
+
+EXPOSE 25565
