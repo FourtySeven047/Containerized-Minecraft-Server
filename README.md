@@ -1,7 +1,7 @@
 
-# Kubernetes Minecraft Server
+# Containerized Minecraft Server
 
-This projects is a collection of everything you need to create your own minecraft server deployment in a Kubernetes cluster. 
+This projects is a collection of everything you need to create your own containerized minecraft server deployment using docker or kubernetes. 
 
 ## Features
 
