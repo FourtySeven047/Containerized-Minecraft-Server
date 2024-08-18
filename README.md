@@ -1,11 +1,11 @@
 
 # Containerized Minecraft Server
 
-This projects is a collection of everything you need to create your own containerized minecraft server deployment using docker or kubernetes. 
+This projects is a collection of everything you need to create your own containerized minecraft server deployment using docker.
 
 ## Features
 
-- Minecraft Version support for 1.20.0 and up!
+- Minecraft Version support for 1.18.0 and up!
 - Fully automatic download of supported server jar files
 - Autonomous server booting on start of container
 
@@ -14,9 +14,8 @@ This projects is a collection of everything you need to create your own containe
 
 ### Requirements
 
-- Healthy installation of the Docker Engine or
-- (soon) a healthy kubernetes instance
-- Internet connection to download the image or manifest
+- Healthy installation of the Docker Engine
+- Internet connection to download the image
 
 ### Docker Deployment
 
@@ -25,10 +24,6 @@ A Deployment using docker is really simple. You just need to execute this comman
 ```bash
   docker run -d -p 25565:25565 --env version="1.21.1" fourtyseven/minecraft_server:latest
 ```
-
-### Kubernetes Deployment
-
-Coming soon!
 
 ### Troubleshooting
 
